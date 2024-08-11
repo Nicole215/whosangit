@@ -35,11 +35,15 @@ h1 {
     margin: 10px 0;
     text-align: left;
     border-radius: 5px;
+    transition: all 0.3s;
 }
-.btn:hover {
+/* disable cheating */
+.btn:hover:not([disabled]) {
     background: black;
     color: white;
-    transition: all 0.3s;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #next-btn {
     background-color: darkgray;
@@ -58,28 +62,4 @@ h1 {
 }
 .incorrect{
     background: lightcoral;
-}
-/* score underneath */
-.score-area {
-    margin: 5px auto;
-    width: 90%;
-    max-width: 600px;
-    font-size: 1.2rem;
-}
-.controls-area {
-    width: 85%;
-    margin: 30px auto;
-}
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
-}
-.scores {
-    display: inline-block;
-    padding: 25px;
 }
