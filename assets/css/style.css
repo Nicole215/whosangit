@@ -52,6 +52,13 @@ h1 {
     display: block;
     display: none;
 }
+/* colorcode answer boxes */
+.correct{
+    background: green;
+}
+.incorrect{
+    background: lightcoral;
+}
 /* score underneath */
 .score-area {
     margin: 5px auto;
