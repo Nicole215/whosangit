@@ -11,6 +11,10 @@ h1 {
     text-align: center;
     margin-top: 30px;
 }
+/* rules on landing page */
+.info-box {
+    display: none;
+}
 /* game area */
 .game-area {
     background-color: lightgray;

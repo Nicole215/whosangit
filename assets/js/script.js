@@ -1,7 +1,7 @@
 // Quiz questions
 const questions = [
     {
-        question: "Baby baby",
+        question: "You're obsolete, my baby, my poor unfaithful baby",
         answers: [
             { text: "The Rolling Stones", correct: true},
             { text: "The Beatles", correct: false},
@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Feeling good was good enough for me",
+        question: "You know feeling good was good enough for me",
         answers: [
             { text: "Beyonce", correct: false},
             { text: "Miley Cirus", correct: false},
@@ -17,15 +17,54 @@ const questions = [
         ]
     },
     {
-        question: "You only need a drink if you have nothing else to hold on to",
+        question: "You only need a drink when the whiskey is the only thing that you have left to hold",
         answers: [
             { text: "Kenny Rogers", correct: false},
             { text: "Chris Stapleton", correct: true},
             { text: "Tim McGraw", correct: false},
         ]
+    },
+    {
+        question: "You can check out any time you like, but you can never leave",
+        answers: [
+            { text: "Stray Cats", correct: false},
+            { text: "Steppenwolf", correct: false},
+            { text: "Eagles", correct: true},
+        ]
+    },
+    {
+        question: "But having all this money is gonna bring me down",
+        answers: [
+            { text: "Dr. Hook", correct: true},
+            { text: "Dr. Dre", correct: false},
+            { text: "Dr. Feelgood", correct: false},
+        ]
+    },
+    {
+        question: "... you drink champagne and it tastes like Coca-Cola",
+        answers: [
+            { text: "The Who", correct: false},
+            { text: "The Kinks", correct: true},
+            { text: "The Clash", correct: false},
+        ]
+    },
+    {
+        question: "Gotta go insane to stay sane",
+        answers: [
+            { text: "TLC", correct: false},
+            { text: "R.E.M.", correct: false},
+            { text: "BTS", correct: true},
+        ]
+    },
+    {
+        question: "My life, my love, my drive it came from pain",
+        answers: [
+            { text: "Imagine Dragons", correct: true},
+            { text: "Gorillaz", correct: false},
+            { text: "Bloodhound Gang", correct: false},
+        ]
     }
 ];
-
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
