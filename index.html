@@ -8,6 +8,18 @@
 </head>
 <body>
     <h1 class="heading">Who sang it?</h1>
+    <!-- Rules on landing page for quiz will not show anymore once start button is clicked -->
+<div id="rules" style="display: block;">
+    <h2>Rules for the Who sang it Quiz</h2>
+    <ol>
+        <li>There are 8 questions with 3 possible answers each</li>
+        <li>If you don't know the answer, take a guess</li>
+        <li>You have 15 seconds per question</li>
+        <li>Remember to have fun!</li>
+    </ol>
+    <button id="begin">Challenge accepted</button>
+</div>
+<!-- Quiz page -->
 <div class="game-area">
    
 <div class="questions-area">
@@ -19,12 +31,6 @@
     </div>
     <button id="next-btn">Next</button>
 </div>
-</div>
-
-<div class="score-area">
-    <p class="scores">Correct answers <span id="score">0</span> </p>
-    <p class="scores">Incorrect answers <span id="incorrect">0</span></p>
-
 </div>
     <script src="assets/js/script.js"></script>
 </body>
