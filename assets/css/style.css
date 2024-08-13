@@ -14,6 +14,7 @@ h1 {
 /* rules on landing page */
 h2 {
     background-color: lightgray;
+    padding: 15px;
     margin: 10px;
 }
 .info-box{
@@ -32,6 +33,20 @@ h2 {
 }
 li {
     list-style-type: none;
+    padding: 5px;
+    margin: 20px;
+    font-size: 20px;
+}
+#start-btn {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 /* game area */
 .game-area {
