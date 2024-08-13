@@ -12,12 +12,15 @@ h1 {
     margin-top: 30px;
 }
 /* rules on landing page */
-.info-box, h2 {
+h2 {
+    background-color: lightgray;
+    margin: 10px;
+}
+.info-box{
     background-color: gray;
     width: 100%;
-    margin: auto 0;
+    margin: 20px;
     border-radius: 5px;
-    padding: 20px;
 }
 #rules {
     position: fixed;
@@ -27,6 +30,9 @@ h1 {
     background-color: lightgrey;
     display: none;
 }
+li {
+    list-style-type: none;
+}
 /* game area */
 .game-area {
     background-color: lightgray;
@@ -34,7 +40,7 @@ h1 {
     max-width: 600px;
     margin: 50px auto 0;
     border-radius: 10px;
-    padding: 30px;
+    padding: 3px;
 }
 .questions-area h2 {
     font-size: 25px;

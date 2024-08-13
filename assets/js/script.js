@@ -1,3 +1,14 @@
+// //Use DomContentLoaded event instead of window.onload
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("rules").style.display = "block";
+    const beginQuizButton = document.getElementById("start-btn");
+    if (beginQuizButton) {
+        beginQuizButton.addEventListener("click", function () {
+            document.getElementById("rules").style.display = "none";
+            startQuiz();
+        });
+    }
+});
 // Quiz questions
 const questions = [
     {
