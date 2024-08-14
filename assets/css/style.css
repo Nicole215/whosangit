@@ -30,7 +30,7 @@ h2 {
     z-index: 999;
     background-color: lightcyan;
     display: none;
-    overflow: scroll;
+    overflow: auto;
 }
 li {
     list-style-type: none;
