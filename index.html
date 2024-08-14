@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
     <title>Song Quiz</title>
 </head>
+
 <body>
     <h1 class="heading">Who sang it?</h1>
     <!-- Rules on landing page for quiz will not show anymore once start button is clicked -->
-<div class="info-box">
-    <div id="rules" style="display: block;">
-    <h2>Rules for the Who sang it Quiz</h2>
-    <ul>
-        <li>I will show you songlines, you have to guess the artist</li>
-        <li>There are 8 questions with 3 possible answers each</li>
-        <li>If you don't know the answer, take a guess</li>
-        <li>You have 15 seconds per question</li>
-        <li>Remember to have fun!</li>
-    </ul>
-    <button id="start-btn">Challenge accepted</button>
-</div></div>
-<!-- Quiz page -->
-<div class="game-area">
-   
-<div class="questions-area">
-    <h2 id="question">Questions goes here</h2>
-    <div id="answer-buttons">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
+    <div class="info-box">
+        <div id="rules">
+            <h2>Rules for the Who sang it Quiz</h2>
+            <ul>
+                <li>I will show you songlines, you have to guess the artist</li>
+                <li>There are 8 questions with 3 possible answers each</li>
+                <li>If you don't know the answer, take a guess</li>
+                <li>Remember to have fun!</li>
+            </ul>
+            <button id="start-btn">Challenge accepted</button>
+        </div>
     </div>
-    <button id="next-btn">Next</button>
-</div>
-</div>
+    <!-- Quiz page -->
+    <div class="game-area">
+        <div class="questions-area">
+            <h2 id="question">Questions goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
