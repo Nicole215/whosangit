@@ -89,6 +89,9 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 | Feedback | get feedback if answer was correct | after choosing an answer, a color code shows if I was right | color coding works throughout all questions |
 | Score | get final score | play game to end | final score is shown |
 
+### Bugs
+No bugs are known to this date.
+
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
   - First open the repository on GitHub
@@ -103,11 +106,15 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 ### Languages used
 HTML, CSS and JavaScript
 ### Frameworks, Libraries and Programs used
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to verify responsiveness
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes
+- Chrome DevTools was used for overall development and regular testing
 - [GitHub](https://github.com/) was used for version control and site deployment
 - [GitPod](https://gitpod.io/) was used as development hosting platform
 - [Google Fonts](https://fonts.google.com/) was used to import the font for the Header
 - [Coolors](https://coolors.co/) was used to find a matching color for the chosen background color
 ## Credits
-- for the game itself [this tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8) was used
-- Google search was used to make sure the lyrics are correct and don't contain spelling errors
+- for the code of the game [this tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8) was used
+- Whilest I know all lyrics used by heart from countless singing along, Google search was used to make sure the lyrics are correct and don't contain spelling errors
+## Acknowledgements
+I could not have done this website without my mentor Rory Patrick Sheridan, who always pointed in the right direction, when I felt lost. 
