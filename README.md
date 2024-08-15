@@ -59,7 +59,7 @@ All wireframes were created using Balsamiq.
 ![Screenshot 2024-08-15 201829](https://github.com/user-attachments/assets/d2ef2caf-7fc4-4300-bb50-0a43e97c2081)
 
   
-### Futures Features
+### Future Features
 - Show timer, so the user knows how much time is left.
 - Connect the application to a data base to easily increase the number of questions.
 - Let user choose a decade to play.
@@ -117,4 +117,4 @@ HTML, CSS and JavaScript
 - for the code of the game [this tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8) was used
 - Whilest I know all lyrics used by heart from countless singing along, Google search was used to make sure the lyrics are correct and don't contain spelling errors
 ## Acknowledgements
-I could not have done this website without my mentor Rory Patrick Sheridan, who always pointed in the right direction, when I felt lost. 
+I could not have done this website without my mentor Rory Patrick Sheridan, who pointed in the right direction, when I felt lost. 
