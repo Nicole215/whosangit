@@ -1,4 +1,4 @@
-// //Use DomContentLoaded event instead of window.onload
+// //Allows rules to be shown before quiz start
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("rules").style.display = "block";
     const beginQuizButton = document.getElementById("start-btn");
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
 // Quiz questions
 const questions = [
     {
@@ -85,15 +86,23 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Start quiz
+// Start quiz with first question from array
 function startQuiz(){
+    try{
+
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
-    showQuestion();
+    showQuestion();}
+    catch(err){
+        console.log(err)
+    }
 }
-// Get questions from array
+
+// Get next questions from array
 function showQuestion(){
+    try{
+
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -110,15 +119,25 @@ function showQuestion(){
     button.addEventListener("click", selectAnswer);
    });
    }
+   catch(err){
+    console.log(err)
+   }
+}
 
-// Remove previous answers
+// Remove initial answers
 function resetState(){
+    try{
+
     nextButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
+    }}
+    catch(err){
+        console.log(err)
     }
 }
-// Check selected Answer for correctnes and give next button if so
+
+// Check selected Answer for correctnes and give next button
 function selectAnswer(e){
     try{
 
@@ -141,6 +160,7 @@ function selectAnswer(e){
         console.log(err)
     }
 }
+
 // Output total score
 function showScore(){
     resetState();
@@ -150,13 +170,19 @@ function showScore(){
     nextButton.style.display = "block";
 }   
 function handleNextButton(){
+    try{
+
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
         showQuestion();
     }else{
         showScore();
+    }}
+    catch(err){
+    console.log(err)
     }
-}    
+}
+   
 nextButton.addEventListener("click", ()=>{
     if(currentQuestionIndex < questions.length){
         handleNextButton();
