@@ -192,6 +192,7 @@ nextButton.addEventListener("click", ()=>{
     }
 );
 
+// Will show user result when time is up
 function countdown(){
     resetState();
   questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
