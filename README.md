@@ -81,6 +81,14 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 
 ![Screenshot 2024-08-15 201742](https://github.com/user-attachments/assets/e345f24b-2919-49c6-ac90-f405dfe299cf)
 
+### Manual Testing
+| Feature | Expect | Action | Result |
+| --- | --- | --- | --- |
+| Rules | show rules, before game start | open website | Landing page shows rules |
+| Start game | start game after reading rules | click "Challenge accepted" after reding rules | Game starts when button clicked |
+| Feedback | get feedback if answer was correct | after choosing an answer, a color code shows if I was right | color coding works throughout all questions |
+| Score | get final score | play game to end | final score is shown |
+
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
   - First open the repository on GitHub
