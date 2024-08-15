@@ -29,6 +29,7 @@ h2 {
     max-height: 80%;
     z-index: 999;
     background-color: lightcyan;
+    text-align: center;
     display: none;
     overflow: auto;
 }
@@ -73,6 +74,7 @@ li {
     background: white;
     color: black;
     font-weight: 500;
+    font-size: 15px;
     width: 100%;
     border: 1px solid black;
     padding: 10px;
