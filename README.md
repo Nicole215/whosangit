@@ -25,6 +25,7 @@ For the quiz name, shown through all pages, Rock Salt was used. With the handwri
 All wireframes were created using Balsamiq.
 <details>
 <summary>Desktop</summary>
+  
 ![New Wireframe 1](https://github.com/user-attachments/assets/6b6dc9ca-5ec5-4ed9-b860-55087499eb1d)
   
 ![New Wireframe 2](https://github.com/user-attachments/assets/63bec6d7-96fa-4437-b693-6b7e853b2d9b) 
@@ -34,3 +35,19 @@ All wireframes were created using Balsamiq.
 
 ![New Wireframe 3](https://github.com/user-attachments/assets/c26f4ba4-67ac-47a9-b341-adf285a2702b)
 </details>
+## Features
+### Existing Features
+- Rules Area
+  - Upon first opening the site, the rules will be shown.
+  - This section shows a short explanation.
+  - This section also has a start button to start the game.
+  
+![Screenshot 2024-08-15 030938](https://github.com/user-attachments/assets/6830d771-28a6-43b0-b128-1c9b915c2dae)
+
+- Quiz Area
+  - This section shows a question and three possible answers.
+  - When the right answer gets chosen, it turns green and the next button appears.
+  - When the wrong answer is chosen, it turns red, revealing the correct answer in green, and the next button appears.
+    
+![Screenshot 2024-08-15 031343](https://github.com/user-attachments/assets/2a22e12d-9337-4090-bdaa-fdec65c55009)
+
