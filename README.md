@@ -54,16 +54,33 @@ All wireframes were created using Balsamiq.
 ![Screenshot 2024-08-15 031343](https://github.com/user-attachments/assets/2a22e12d-9337-4090-bdaa-fdec65c55009)
 
 - Results Area
-  -At the end of game, the user will see his score.
+  - At the end of game, the user will see his score.
 
 ![Screenshot 2024-08-15 201829](https://github.com/user-attachments/assets/d2ef2caf-7fc4-4300-bb50-0a43e97c2081)
 
   
 ### Futures Features
+- Show timer, so the user knows how much time is left.
 - Connect the application to a data base to easily increase the number of questions.
 - Let user choose a decade to play.
 - Background styling matching the chosen decade to play.
 - List of used songs at the end of the quiz, each song linked to either spotify or youtube.
+## Testing
+### Code Validation
+HTML and CSS have been validated via W3C HTML Validator and the W3C CSS Validator. No errors came up.
+
+![Screenshot 2024-08-14 223816](https://github.com/user-attachments/assets/e5ba8b58-0266-4564-9313-d0fedea53fe2)
+
+![Screenshot 2024-08-14 223900](https://github.com/user-attachments/assets/b01f065c-ffc3-47f4-9bf6-ffb3068b783c)
+
+Accessibility, as well as Performance, Best Practices and SEO were tested using Lighthouse in Chrome DevTool.
+
+![Screenshot 2024-08-15 000558](https://github.com/user-attachments/assets/3a6ee0a4-129c-4ac9-b782-d119c040ca8d)
+
+JavaScript was tested using [JSHint](https://jshint.com/) and came back with no errors.
+
+![Screenshot 2024-08-15 201742](https://github.com/user-attachments/assets/e345f24b-2919-49c6-ac90-f405dfe299cf)
+
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
   - First open the repository on GitHub
