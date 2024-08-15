@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (beginQuizButton) {
         beginQuizButton.addEventListener("click", function () {
             document.getElementById("rules").style.display = "none";
+            const timeout = setInterval(countdown, 1000)
             startQuiz();
         });
     }
@@ -76,18 +77,22 @@ const questions = [
         ]
     }
 ];
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+
 let currentQuestionIndex = 0;
 let score = 0;
-// Quiz code
+
+// Start quiz
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+// Get questions from array
 function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -104,7 +109,8 @@ function showQuestion(){
     }
     button.addEventListener("click", selectAnswer);
    });
-}
+   }
+
 // Remove previous answers
 function resetState(){
     nextButton.style.display = "none";
@@ -112,8 +118,10 @@ function resetState(){
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
-// Check selected Answer for correctnes
+// Check selected Answer for correctnes and give next button if so
 function selectAnswer(e){
+    try{
+
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
@@ -128,7 +136,10 @@ function selectAnswer(e){
         }
         button.disabled = true;
     });
-    nextButton.style.display = "block";
+    nextButton.style.display = "block";}
+    catch(err){
+        console.log(err)
+    }
 }
 // Output total score
 function showScore(){
@@ -154,4 +165,13 @@ nextButton.addEventListener("click", ()=>{
     }
     }
 );
-startQuiz();
+let timer = 60
+function countdown(){
+    timer--
+    console.log(timer)
+    if(timer == 0){
+        clearInterval(timeout)
+        showScore()
+    }
+}
+
