@@ -52,6 +52,11 @@ All wireframes were created using Balsamiq.
     
 ![Screenshot 2024-08-15 031343](https://github.com/user-attachments/assets/2a22e12d-9337-4090-bdaa-fdec65c55009)
 
+### Futures Features
+- Connect the application to a data base to easily increase the number of questions.
+- Let user choose a decade to play.
+- Background styling matching the chosen decade to play.
+- List of used songs at the end of the quiz, each song linked to either spotify or youtube.
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
   - First open the repository on GitHub
@@ -61,9 +66,12 @@ All wireframes were created using Balsamiq.
   - From the source section drop-down menu select the Main Branch and click "save"
   - The page will automatically be refreshed and the link appears
   - It may take a few minutes
-
-### Futures Features
-- Connect the application to a data base to easily increase the number of questions.
-- Let user choose a decade to play.
-- Background styling matching the chosen decade to play.
-- List of used songs at the end of the quiz, each song linked to either spotify or youtube.
+## Technologies used
+### Languages used
+HTML, CSS and JavaScript
+### Frameworks, Libraries and Programs used
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes
+- [GitHub](https://github.com/) was used for version control and site deployment
+- [GitPod](https://gitpod.io/) was used as development hosting platform
+- [Google Fonts](https://fonts.google.com/) was used to import the font for the Header
+- [Coolors](https://coolors.co/) was used to find a matching color for the chosen background color
