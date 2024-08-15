@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (beginQuizButton) {
         beginQuizButton.addEventListener("click", function () {
             document.getElementById("rules").style.display = "none";
-            const timeout = setInterval(countdown, 1000)
+            const timeout = setInterval(countdown, 60000);
             startQuiz();
         });
     }
@@ -191,13 +191,12 @@ nextButton.addEventListener("click", ()=>{
     }
     }
 );
-let timer = 60
+
 function countdown(){
-    timer--
-    console.log(timer)
-    if(timer == 0){
-        clearInterval(timeout)
-        showScore()
-    }
+    resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    // Option to play again
+    nextButton.innerHTML = "Play again";
+    nextButton.style.display = "block";
 }
 
