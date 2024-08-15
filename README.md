@@ -66,6 +66,7 @@ All wireframes were created using Balsamiq.
   - From the source section drop-down menu select the Main Branch and click "save"
   - The page will automatically be refreshed and the link appears
   - It may take a few minutes
+
 ## Technologies used
 ### Languages used
 HTML, CSS and JavaScript
@@ -75,3 +76,6 @@ HTML, CSS and JavaScript
 - [GitPod](https://gitpod.io/) was used as development hosting platform
 - [Google Fonts](https://fonts.google.com/) was used to import the font for the Header
 - [Coolors](https://coolors.co/) was used to find a matching color for the chosen background color
+## Credits
+- for the game itself [this tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8) was used
+- Google search was used to make sure, the lyrics are correct and don't contain spelling errors
