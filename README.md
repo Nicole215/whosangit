@@ -16,3 +16,8 @@ The Design of the quiz is kept simple to avoid distraction.
 The page is mainly kept in two colors.
 
 ![Screenshot 2024-08-15 024021](https://github.com/user-attachments/assets/edfd5b2d-26dd-4a96-82ec-4d13f372b267)
+
+### Font
+For the quiz name, shown through all pages, Rock Salt was used. With the handwritten style it loosens up the website.
+
+![Screenshot 2024-08-15 024343](https://github.com/user-attachments/assets/f316ea49-d052-4004-9898-03edc2ae57f9)
