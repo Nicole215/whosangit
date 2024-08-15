@@ -51,3 +51,8 @@ All wireframes were created using Balsamiq.
     
 ![Screenshot 2024-08-15 031343](https://github.com/user-attachments/assets/2a22e12d-9337-4090-bdaa-fdec65c55009)
 
+### Futures Features
+- Connect the application to a data base to easily increase the number of questions.
+- Let user choose a decade to play.
+- Background styling matching the chosen decade to play.
+- List of used songs at the end of the quiz, each song linked to either spotify or youtube.
