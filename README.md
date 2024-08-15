@@ -35,6 +35,7 @@ All wireframes were created using Balsamiq.
 
 ![New Wireframe 3](https://github.com/user-attachments/assets/c26f4ba4-67ac-47a9-b341-adf285a2702b)
 </details>
+
 ## Features
 ### Existing Features
 - Rules Area
