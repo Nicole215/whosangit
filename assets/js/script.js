@@ -1,11 +1,11 @@
-// //Allows rules to be shown before quiz start
+//Allows rules to be shown before quiz start
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("rules").style.display = "block";
     const beginQuizButton = document.getElementById("start-btn");
     if (beginQuizButton) {
         beginQuizButton.addEventListener("click", function () {
             document.getElementById("rules").style.display = "none";
-            const timeout = setInterval(countdown, 60000);
+            const timeout = setInterval(countdown, 60000); //Starts timer once challenge is accepted
             startQuiz();
         });
     }
