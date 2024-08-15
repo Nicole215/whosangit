@@ -1,6 +1,7 @@
 # Who sang it?
 Who sang it? is a quiz, where users can test whether they recognize lyrics, when the music is missing.
-![Screenshot 2024-08-15 005100](https://github.com/user-attachments/assets/a73471c2-9d12-4b93-b0e2-585d14eb5d01)
+![Screenshot 2024-08-15 200921](https://github.com/user-attachments/assets/53937dd0-261f-4715-930e-5b187553ec8d)
+
 You can play the quiz [here](https://nicole215.github.io/whosangit/)
 ## User Experience (UX)
 ### User Stories
@@ -43,7 +44,7 @@ All wireframes were created using Balsamiq.
   - This section shows a short explanation.
   - This section also has a start button to start the game.
   
-![Screenshot 2024-08-15 030938](https://github.com/user-attachments/assets/6830d771-28a6-43b0-b128-1c9b915c2dae)
+![Screenshot 2024-08-15 201857](https://github.com/user-attachments/assets/829081ca-c9d8-4e04-9eec-a71d056eea63)
 
 - Quiz Area
   - This section shows a question and three possible answers.
@@ -52,6 +53,12 @@ All wireframes were created using Balsamiq.
     
 ![Screenshot 2024-08-15 031343](https://github.com/user-attachments/assets/2a22e12d-9337-4090-bdaa-fdec65c55009)
 
+- Results Area
+  -At the end of game, the user will see his score.
+
+![Screenshot 2024-08-15 201829](https://github.com/user-attachments/assets/d2ef2caf-7fc4-4300-bb50-0a43e97c2081)
+
+  
 ### Futures Features
 - Connect the application to a data base to easily increase the number of questions.
 - Let user choose a decade to play.
@@ -78,4 +85,4 @@ HTML, CSS and JavaScript
 - [Coolors](https://coolors.co/) was used to find a matching color for the chosen background color
 ## Credits
 - for the game itself [this tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8) was used
-- Google search was used to make sure, the lyrics are correct and don't contain spelling errors
+- Google search was used to make sure the lyrics are correct and don't contain spelling errors
