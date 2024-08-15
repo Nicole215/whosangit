@@ -79,10 +79,8 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-
 let currentQuestionIndex = 0;
 let score = 0;
-
 // Quiz code
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -90,7 +88,6 @@ function startQuiz(){
     nextButton.innerHTML = "Next";
     showQuestion();
 }
-
 function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -108,7 +105,6 @@ function showQuestion(){
     button.addEventListener("click", selectAnswer);
    });
 }
-
 // Remove previous answers
 function resetState(){
     nextButton.style.display = "none";
@@ -116,7 +112,6 @@ function resetState(){
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
-
 // Check selected Answer for correctnes
 function selectAnswer(e){
     const selectedBtn = e.target;
@@ -135,10 +130,11 @@ function selectAnswer(e){
     });
     nextButton.style.display = "block";
 }
-
+// Output total score
 function showScore(){
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    // Option to play again
     nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
 }   
