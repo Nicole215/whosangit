@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (beginQuizButton) {
         beginQuizButton.addEventListener("click", function () {
             document.getElementById("rules").style.display = "none";
-            const timeout = setInterval(countdown, 60000); //Starts timer once challenge is accepted
             startQuiz();
         });
     }
@@ -85,16 +84,21 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let timeout;
 
 // Start quiz with first question from array
 function startQuiz(){
     try{
+        clearTimer(); // Clear any existing timer
+        currentQuestionIndex = 0;
+        score = 0;
+        nextButton.innerHTML = "Next";
+        nextButton.style.display = "none"; // Hide Next button initially
+        showQuestion();
 
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();}
-    catch(err){
+        // Start the timer
+        timeout = setTimeout(countdown, 60000);
+    } catch (err) {
         console.log(err)
     }
 }
@@ -102,24 +106,22 @@ function startQuiz(){
 // Get next questions from array
 function showQuestion(){
     try{
+        resetState();
+        let currentQuestion = questions[currentQuestionIndex];
+        let questionNo = currentQuestionIndex + 1;
+        questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-   currentQuestion.answers.forEach(answer =>{
-    const button = document.createElement("button");
-    button.innerHTML = answer.text;
-    button.classList.add("btn");
-    answerButtons.appendChild(button);
-    if(answer.correct){
-        button.dataset.correct = answer.correct;
-    }
-    button.addEventListener("click", selectAnswer);
-   });
-   }
-   catch(err){
+        currentQuestion.answers.forEach(answer =>{
+            const button = document.createElement("button");
+            button.innerHTML = answer.text;
+            button.classList.add("btn");
+            answerButtons.appendChild(button);
+            if(answer.correct){
+                button.dataset.correct = answer.correct;
+            }
+            button.addEventListener("click", selectAnswer);
+        });
+   } catch(err){
     console.log(err)
    }
 }
@@ -127,12 +129,10 @@ function showQuestion(){
 // Remove initial answers
 function resetState(){
     try{
-
-    nextButton.style.display = "none";
-    while(answerButtons.firstChild){
-        answerButtons.removeChild(answerButtons.firstChild);
-    }}
-    catch(err){
+        nextButton.style.display = "none";
+        while(answerButtons.firstChild){
+            answerButtons.removeChild(answerButtons.firstChild);
+    }} catch(err) {
         console.log(err)
     }
 }
@@ -140,23 +140,23 @@ function resetState(){
 // Check selected Answer for correctnes and give next button
 function selectAnswer(e){
     try{
-
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.classList.add("correct");
-        score++;
-    } else {
-        selectedBtn.classList.add("incorrect");
-    }
-    Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-            button.classList.add("correct");
+        const selectedBtn = e.target;
+        const isCorrect = selectedBtn.dataset.correct === "true";
+        if(isCorrect){
+            selectedBtn.classList.add("correct");
+            score++;
+        } else {
+            selectedBtn.classList.add("incorrect");
         }
-        button.disabled = true;
-    });
-    nextButton.style.display = "block";}
-    catch(err){
+        Array.from(answerButtons.children).forEach(button => {
+            if(button.dataset.correct === "true"){
+                button.classList.add("correct");
+            }
+            button.disabled = true;
+        });
+        nextButton.style.display = "block";
+        
+    } catch(err){
         console.log(err)
     }
 }
@@ -168,36 +168,44 @@ function showScore(){
     // Option to play again
     nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
-}   
+}
+
+// Handle next question or end quiz
 function handleNextButton(){
     try{
-
-    currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
-        showQuestion();
-    }else{
-        showScore();
-    }}
-    catch(err){
-    console.log(err)
+        currentQuestionIndex++;
+        if(currentQuestionIndex < questions.length){
+            showQuestion();
+        }else{
+            clearTimer();
+            showScore();
+        }
+    } catch(err){
+        console.log(err)
     }
 }
    
 nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
-        handleNextButton();
-    }else{
+    if(nextButton.innerHTML === "Play again"){
         startQuiz();
+    }else{
+        handleNextButton();
     }
-    }
-);
+});
 
 // Will show user result when time is up
 function countdown(){
     resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    // Option to play again
+    questionElement.innerHTML = `Time's up! You scored ${score} out of ${questions.length}!`;
+    // Option to play again from the beginning
     nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
+    clearTimer();
+}
+
+function clearTimer() {
+    if (timeout) {
+        clearTimeout(timeout);
+    }
 }
 
