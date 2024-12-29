@@ -86,20 +86,35 @@ let currentQuestionIndex = 0;
 let score = 0;
 let timeout;
 
+let timeLeft = 60;
+let countdownInterval;
+
 // Start quiz with first question from array
 function startQuiz(){
     try{
         clearTimer(); // Clear any existing timer
         currentQuestionIndex = 0;
         score = 0;
+        timeLeft = 60; // Reset time
+        document.getElementById("timer").textContent = timeLeft;
         nextButton.innerHTML = "Next";
         nextButton.style.display = "none"; // Hide Next button initially
         showQuestion();
 
         // Start the timer
-        timeout = setTimeout(countdown, 60000);
+        countdownInterval = setInterval(updateTimer, 1000); // Update every second
+        timeout = setTimeout(countdown, 60000); // End the quiz after 60 seconds
     } catch (err) {
         console.log(err)
+    }
+}
+
+function updateTimer() {
+    if (timeLeft > 0) {
+        timeLeft--; // Decrement the timer
+        document.getElementById("timer").textContent = timeLeft; // Update timer display
+    } else {
+        clearInterval(countdownInterval); // Stop interval if time runs out
     }
 }
 
@@ -206,6 +221,9 @@ function countdown(){
 function clearTimer() {
     if (timeout) {
         clearTimeout(timeout);
+    }
+    if (countdownInterval) {
+        clearInterval(countdownInterval);
     }
 }
 
