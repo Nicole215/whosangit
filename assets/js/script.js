@@ -105,7 +105,7 @@ function startQuiz(){
         countdownInterval = setInterval(updateTimer, 1000); // Update every second
         timeout = setTimeout(countdown, 60000); // End the quiz after 60 seconds
     } catch (err) {
-        console.log(err)
+        console.log(err);
     }
 }
 
@@ -137,7 +137,7 @@ function showQuestion(){
             button.addEventListener("click", selectAnswer);
         });
    } catch(err){
-    console.log(err)
+    console.log(err);
    }
 }
 
@@ -148,7 +148,7 @@ function resetState(){
         while(answerButtons.firstChild){
             answerButtons.removeChild(answerButtons.firstChild);
     }} catch(err) {
-        console.log(err)
+        console.log(err);
     }
 }
 
@@ -172,7 +172,7 @@ function selectAnswer(e){
         nextButton.style.display = "block";
         
     } catch(err){
-        console.log(err)
+        console.log(err);
     }
 }
 
@@ -196,7 +196,7 @@ function handleNextButton(){
             showScore();
         }
     } catch(err){
-        console.log(err)
+        console.log(err);
     }
 }
    
