@@ -12,7 +12,7 @@ You can play the quiz [here](https://nicole215.github.io/whosangit/)
 - As a user, I want to know my score
 - As a user, I want to know how far I have progressed in the game
 ## Design
-The Design of the quiz is kept simple to avoid distraction.
+The design of the Song Quiz is intentionally kept simple to avoid distractions, as the quiz itself is already challenging. The background color of the page is lightcyan, chosen specifically to help the player maintain a cool and focused mindset while playing.
 ### Color Scheme
 The page is mainly kept in two colors.
 
