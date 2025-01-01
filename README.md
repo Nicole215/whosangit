@@ -60,12 +60,15 @@ All wireframes were created using Balsamiq.
 
 - Timer
   - The quiz includes a countdown timer set to 60 seconds, adding an extra layer of challenge by limiting the time available to answer all questions.
+  - The timer not only creates a challenge but also contributes to the game's dynamic pacing.
   - The timer is displayed in the playful "Rock Salt" font, which is also used for the title. This font choice loosens up the look and balances the overall design.
 
 ![Screenshot 2025-01-01 212548](https://github.com/user-attachments/assets/b6a9cc13-7dfb-462b-a3bc-06792eee92ff)
 
 - Custom 404 Page
   - A customized 404 error page has been created to match the overall page styling, including the lightcyan background and a cohesive design.
+  - According to the quiz topic, a line of text was used to let the user know that the page they were looking for does not exist.
+  - Again, "Rock Salt" was used for title, as well as for the link.
   - This ensures a consistent user experience, even when encountering errors.
 
 ![Screenshot 2025-01-01 205454](https://github.com/user-attachments/assets/5b1b92bc-42df-479d-967e-c1424b4fae3b)
