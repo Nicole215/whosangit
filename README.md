@@ -83,7 +83,7 @@ Accessibility, as well as Performance, Best Practices and SEO were tested using 
 
 JavaScript was tested using [JSHint](https://jshint.com/) and came back with no errors.
 
-![Screenshot 2024-08-15 201742](https://github.com/user-attachments/assets/e345f24b-2919-49c6-ac90-f405dfe299cf)
+![Screenshot 2024-12-31 115934](https://github.com/user-attachments/assets/f440f9f5-d09a-47d6-97bb-bcfc4ba5e11e)
 
 ### Manual Testing
 | Feature | Expect | Action | Result |
@@ -92,6 +92,7 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 | Start game | start game after reading rules | click "Challenge accepted" after reding rules | Game starts when button clicked |
 | Feedback | get feedback if answer was correct | after choosing an answer, a color code shows if I was right | color coding works throughout all questions |
 | Score | get final score | play game to end | final score is shown |
+| Countdown Timer | timer starts at 60 seconds and counts down to 0 | start the quiz | timer displays the remaining time and stops at 0, triggering the "Time's up!" message |
 
 ### Bugs
 No bugs are known to this date.
