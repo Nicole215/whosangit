@@ -98,7 +98,7 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 - Bug: When the timer was up and the player wanted to play again, the game would start one question after the one where the timer ran out.
   - Solution: Reset the game state properly at the end of the quiz.
 - Bug: After fixing the above, a new issue appeared where the game always showed 0 points if the timer ran out before all questions were answered.
-  - Solution: Replaced setInterval with setTimeout to accurately handle the timer and ensure the score was calculated correctly. This fix required trial and error, referencing Stack Overflow, and a little help from ChatGPT.
+  - Solution: Replaced ```setInterval``` with setTimeout to accurately handle the timer and ensure the score was calculated correctly. This fix required trial and error, referencing Stack Overflow, and a little help from ChatGPT.
 
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
@@ -109,6 +109,17 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
   - From the source section drop-down menu select the Main Branch and click "save"
   - The page will automatically be refreshed and the link appears
   - It may take a few minutes
+
+### How to Fork
+- Go to the repository on GitHub.
+- Click the "Fork" button at the top right.
+- This creates a copy of the repository under your GitHub account.
+
+### How to Clone
+- Open the repository (your fork or the original).
+- Click the "Code" button and copy the URL.
+- Open your terminal and type: git clone <URL>.
+- Press Enter to download the repository to your computer.
 
 ## Technologies used
 ### Languages used
