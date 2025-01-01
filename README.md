@@ -94,8 +94,11 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 | Score | get final score | play game to end | final score is shown |
 | Countdown Timer | timer starts at 60 seconds and counts down to 0 | start the quiz | timer displays the remaining time and stops at 0, triggering the "Time's up!" message |
 
-### Bugs
-No bugs are known to this date.
+### Fixed Bugs
+- Bug: When the timer was up and the player wanted to play again, the game would start one question after the one where the timer ran out.
+  - Solution: Reset the game state properly at the end of the quiz.
+- Bug: After fixing the above, a new issue appeared where the game always showed 0 points if the timer ran out before all questions were answered.
+  - Solution: Replaced setInterval with setTimeout to accurately handle the timer and ensure the score was calculated correctly. This fix required trial and error, referencing Stack Overflow, and a little help from ChatGPT.
 
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
