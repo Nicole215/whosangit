@@ -64,9 +64,15 @@ All wireframes were created using Balsamiq.
 
 ![Screenshot 2025-01-01 212548](https://github.com/user-attachments/assets/b6a9cc13-7dfb-462b-a3bc-06792eee92ff)
 
+- Custom 404 Page
+  - A customized 404 error page has been created to match the overall page styling, including the lightcyan background and a cohesive design.
+  - This ensures a consistent user experience, even when encountering errors.
+
+![Screenshot 2025-01-01 205454](https://github.com/user-attachments/assets/5b1b92bc-42df-479d-967e-c1424b4fae3b)
+
 ### Future Features
 - Connect the application to a data base to easily increase the number of questions.
-- Let user choose a decade to play.
+- Let user choose a music decade to play.
 - Background styling matching the chosen decade to play.
 - List of used songs at the end of the quiz, each song linked to either spotify or youtube.
 ## Testing
@@ -98,7 +104,7 @@ JavaScript was tested using [JSHint](https://jshint.com/) and came back with no 
 - Bug: When the timer was up and the player wanted to play again, the game would start one question after the one where the timer ran out.
   - Solution: Reset the game state properly at the end of the quiz.
 - Bug: After fixing the above, a new issue appeared where the game always showed 0 points if the timer ran out before all questions were answered.
-  - Solution: Replaced ```setInterval``` with setTimeout to accurately handle the timer and ensure the score was calculated correctly. This fix required trial and error, referencing Stack Overflow, and a little help from ChatGPT.
+  - Solution: Replaced ```setInterval``` with ```setTimeout``` to accurately handle the timer and ensure the score was calculated correctly. This fix required trial and error, referencing Stack Overflow, and a little help from ChatGPT.
 
 ## Deployment
 - The site was deployed using GitHub pages by following steps:
