@@ -124,3 +124,26 @@ li {
 .incorrect{
     background: lightcoral;
 }
+/* Styling for 404 page */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+a:link {
+    text-decoration: none;
+    font-family: 'Rock Salt'; 
+}
