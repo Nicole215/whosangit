@@ -58,9 +58,13 @@ All wireframes were created using Balsamiq.
 
 ![Screenshot 2024-08-15 201829](https://github.com/user-attachments/assets/d2ef2caf-7fc4-4300-bb50-0a43e97c2081)
 
-  
+- Timer
+  - The quiz includes a countdown timer set to 60 seconds, adding an extra layer of challenge by limiting the time available to answer all questions.
+  - The timer is displayed in the playful "Rock Salt" font, which is also used for the title. This font choice loosens up the look and balances the overall design.
+
+![Screenshot 2025-01-01 212548](https://github.com/user-attachments/assets/b6a9cc13-7dfb-462b-a3bc-06792eee92ff)
+
 ### Future Features
-- Show timer, so the user knows how much time is left.
 - Connect the application to a data base to easily increase the number of questions.
 - Let user choose a decade to play.
 - Background styling matching the chosen decade to play.
